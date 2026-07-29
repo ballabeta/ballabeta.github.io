@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Balla Beta – PhD Researcher</title>
+  <meta name="description" content="Personal academic website of Balla Beta, PhD student." />
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Font Awesome for icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plh7eecyn6CafKlUCtKO2f3gUSA3uA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+
+  <!-- ─── Navigation ─────────────────────────────────────────────────────── -->
+  <header id="site-header">
+    <nav class="nav-container">
+      <a class="nav-logo" href="#hero">Balla Beta</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#cv">CV</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ─── Hero ────────────────────────────────────────────────────────── -->
+    <section id="hero" class="hero">
+      <div class="hero-inner container">
+        <div class="hero-photo">
+          <img src="assets/profile.jpg" alt="Balla Beta" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+          <div class="hero-photo-placeholder" aria-hidden="true">
+            <i class="fa-solid fa-user-graduate"></i>
+          </div>
+        </div>
+        <div class="hero-text">
+          <h1>Balla Beta</h1>
+          <p class="hero-subtitle">PhD Researcher &middot; [Your University]</p>
+          <p class="hero-tagline">
+            Researching <strong>[Your Research Topic]</strong> at the
+            intersection of <em>[Field A]</em> and <em>[Field B]</em>.
+          </p>
+          <div class="hero-links">
+            <a href="mailto:your@email.com" class="btn btn-primary">
+              <i class="fa-solid fa-envelope"></i> Contact Me
+            </a>
+            <a href="#research" class="btn btn-outline">
+              <i class="fa-solid fa-microscope"></i> My Research
+            </a>
+          </div>
+          <div class="hero-social">
+            <a href="https://github.com/ballabeta" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://scholar.google.com" target="_blank" rel="noopener" aria-label="Google Scholar"><i class="fa-brands fa-google-scholar"></i></a>
+            <a href="https://orcid.org/0000-0000-0000-0000" target="_blank" rel="noopener" aria-label="ORCID"><i class="fa-brands fa-orcid"></i></a>
+            <a href="https://twitter.com/yourhandle" target="_blank" rel="noopener" aria-label="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── About ───────────────────────────────────────────────────────── -->
+    <section id="about" class="section section-light">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-grid">
+          <div class="about-bio">
+            <p>
+              I am a PhD student in the <strong>[Department Name]</strong> at
+              <strong>[University Name]</strong>, advised by
+              <a href="#">Prof. [Advisor Name]</a>. My research focuses on
+              [brief description of your research area].
+            </p>
+            <p>
+              Before starting my PhD, I completed my [Bachelor's / Master's]
+              degree in [Field] from [Institution]. I am passionate about
+              [research theme] and its applications to [real-world impact].
+            </p>
+            <p>
+              Outside of research, I enjoy [hobbies / interests].
+            </p>
+          </div>
+          <div class="about-interests">
+            <h3>Research Interests</h3>
+            <ul class="tag-list">
+              <li>Machine Learning</li>
+              <li>Natural Language Processing</li>
+              <li>Computer Vision</li>
+              <li>Data Science</li>
+              <li>[Your Interest]</li>
+              <li>[Your Interest]</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── Research ─────────────────────────────────────────────────────── -->
+    <section id="research" class="section">
+      <div class="container">
+        <h2 class="section-title">Research</h2>
+        <p class="section-intro">
+          My doctoral research investigates [one-sentence summary of your PhD thesis / project].
+        </p>
+        <div class="card-grid">
+
+          <article class="card">
+            <div class="card-icon"><i class="fa-solid fa-brain"></i></div>
+            <h3>Project One</h3>
+            <p>A short description of this research project and what problem it solves or what question it answers.</p>
+            <div class="card-tags">
+              <span>Tag A</span>
+              <span>Tag B</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-icon"><i class="fa-solid fa-chart-line"></i></div>
+            <h3>Project Two</h3>
+            <p>A short description of this research project and what problem it solves or what question it answers.</p>
+            <div class="card-tags">
+              <span>Tag C</span>
+              <span>Tag D</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-icon"><i class="fa-solid fa-database"></i></div>
+            <h3>Project Three</h3>
+            <p>A short description of this research project and what problem it solves or what question it answers.</p>
+            <div class="card-tags">
+              <span>Tag E</span>
+              <span>Tag F</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── Publications ─────────────────────────────────────────────────── -->
+    <section id="publications" class="section section-light">
+      <div class="container">
+        <h2 class="section-title">Publications</h2>
+
+        <div class="pub-list">
+
+          <article class="pub-item">
+            <span class="pub-badge pub-badge-conference">Conference</span>
+            <div class="pub-body">
+              <h3 class="pub-title">
+                <a href="#">Title of Your Paper Here</a>
+              </h3>
+              <p class="pub-authors">
+                <strong>Balla Beta</strong>, Co-Author One, Co-Author Two
+              </p>
+              <p class="pub-venue">
+                <em>Proceedings of [Conference Name] (CONF'25)</em>, 2025.
+              </p>
+              <div class="pub-links">
+                <a href="#" class="pub-link"><i class="fa-solid fa-file-pdf"></i> PDF</a>
+                <a href="#" class="pub-link"><i class="fa-brands fa-github"></i> Code</a>
+                <a href="#" class="pub-link"><i class="fa-solid fa-quote-left"></i> Cite</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="pub-item">
+            <span class="pub-badge pub-badge-journal">Journal</span>
+            <div class="pub-body">
+              <h3 class="pub-title">
+                <a href="#">Title of Another Paper</a>
+              </h3>
+              <p class="pub-authors">
+                Co-Author One, <strong>Balla Beta</strong>, Co-Author Two
+              </p>
+              <p class="pub-venue">
+                <em>Journal of [Field Name]</em>, vol. X, pp. X–X, 2024.
+              </p>
+              <div class="pub-links">
+                <a href="#" class="pub-link"><i class="fa-solid fa-file-pdf"></i> PDF</a>
+                <a href="#" class="pub-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> DOI</a>
+                <a href="#" class="pub-link"><i class="fa-solid fa-quote-left"></i> Cite</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="pub-item">
+            <span class="pub-badge pub-badge-preprint">Preprint</span>
+            <div class="pub-body">
+              <h3 class="pub-title">
+                <a href="#">Title of a Preprint</a>
+              </h3>
+              <p class="pub-authors">
+                <strong>Balla Beta</strong>, Co-Author One
+              </p>
+              <p class="pub-venue">
+                <em>arXiv preprint</em> arXiv:XXXX.XXXXX, 2024.
+              </p>
+              <div class="pub-links">
+                <a href="#" class="pub-link"><i class="fa-solid fa-file-pdf"></i> arXiv</a>
+                <a href="#" class="pub-link"><i class="fa-brands fa-github"></i> Code</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── CV ───────────────────────────────────────────────────────────── -->
+    <section id="cv" class="section">
+      <div class="container">
+        <div class="cv-header">
+          <h2 class="section-title">Curriculum Vitae</h2>
+          <a href="assets/cv.pdf" class="btn btn-outline" download>
+            <i class="fa-solid fa-download"></i> Download CV
+          </a>
+        </div>
+
+        <div class="timeline-grid">
+
+          <!-- Education -->
+          <div class="timeline-col">
+            <h3 class="timeline-heading"><i class="fa-solid fa-graduation-cap"></i> Education</h3>
+            <div class="timeline">
+
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-date">2022 – Present</span>
+                  <h4>PhD in [Your Field]</h4>
+                  <p>[University Name], [City, Country]</p>
+                  <p class="timeline-detail">Thesis: "[Working title of your thesis]"</p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-date">2019 – 2022</span>
+                  <h4>MSc in [Your Field]</h4>
+                  <p>[University Name], [City, Country]</p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-date">2015 – 2019</span>
+                  <h4>BSc in [Your Field]</h4>
+                  <p>[University Name], [City, Country]</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Experience -->
+          <div class="timeline-col">
+            <h3 class="timeline-heading"><i class="fa-solid fa-briefcase"></i> Experience</h3>
+            <div class="timeline">
+
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-date">2022 – Present</span>
+                  <h4>Research Assistant</h4>
+                  <p>[Lab / Department Name], [University]</p>
+                  <p class="timeline-detail">Working on [brief description].</p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-date">Summer 2021</span>
+                  <h4>Research Intern</h4>
+                  <p>[Company / Institute Name]</p>
+                  <p class="timeline-detail">Worked on [brief description].</p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-date">2019 – 2022</span>
+                  <h4>Teaching Assistant</h4>
+                  <p>[University Name]</p>
+                  <p class="timeline-detail">[Course name(s)].</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Awards -->
+        <div class="awards">
+          <h3 class="timeline-heading"><i class="fa-solid fa-award"></i> Honors &amp; Awards</h3>
+          <ul class="awards-list">
+            <li>
+              <strong>[Award Name]</strong> &mdash; [Institution], [Year]
+            </li>
+            <li>
+              <strong>[Scholarship / Fellowship]</strong> &mdash; [Institution], [Year]
+            </li>
+            <li>
+              <strong>[Travel Grant]</strong> &mdash; [Conference Name], [Year]
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ─── Contact ──────────────────────────────────────────────────────── -->
+    <section id="contact" class="section section-light">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <p class="section-intro">
+          Feel free to reach out for collaborations, questions about my research,
+          or just to say hi!
+        </p>
+        <div class="contact-grid">
+
+          <div class="contact-info">
+            <ul class="contact-list">
+              <li>
+                <i class="fa-solid fa-envelope"></i>
+                <a href="mailto:your@email.com">your@email.com</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-location-dot"></i>
+                <span>[Office / Lab Address]<br />[City, Country]</span>
+              </li>
+              <li>
+                <i class="fa-brands fa-github"></i>
+                <a href="https://github.com/ballabeta" target="_blank" rel="noopener">github.com/ballabeta</a>
+              </li>
+              <li>
+                <i class="fa-brands fa-linkedin"></i>
+                <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener">linkedin.com/in/yourprofile</a>
+              </li>
+            </ul>
+          </div>
+
+          <form class="contact-form" id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Your message…" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">
+              <i class="fa-solid fa-paper-plane"></i> Send Message
+            </button>
+            <p class="form-note">
+              Alternatively, email me directly at
+              <a href="mailto:your@email.com">your@email.com</a>.
+            </p>
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ─── Footer ──────────────────────────────────────────────────────────── -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>
+        &copy; <span id="year"></span> Balla Beta &middot;
+        Built with <i class="fa-solid fa-heart" aria-hidden="true"></i> using plain HTML &amp; CSS
+      </p>
+      <p class="footer-note">
+        Last updated: <time id="last-updated">2025</time>
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
