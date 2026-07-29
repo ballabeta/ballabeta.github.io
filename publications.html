@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Publications — [Your Name]</title>
+<meta name="description" content="Publications on coral physiology, calcification, and marine biogeochemistry.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Public+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a class="nav-mark" href="index.html">[YOUR_NAME]</a>
+    <ul class="nav-links">
+      <li><a href="index.html">About</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="publications.html" class="active">Publications</a></li>
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+  <div class="growth-rule" aria-hidden="true"></div>
+</header>
+
+<main>
+  <div class="page-header">
+    <p class="hero-eyebrow">03 — Publications</p>
+    <h1>Publications</h1>
+    <p class="lede">Peer-reviewed articles, in reverse chronological order. Full record on Google Scholar and ORCID.</p>
+  </div>
+
+  <section class="reveal">
+    <ul class="pub-list">
+      <li>
+        <span class="pub-year">2026</span>
+        <div>
+          <div class="pub-title">[Paper title goes here]</div>
+          <div class="pub-venue">[Your Name], [Coauthors]. Journal Name, vol(issue).</div>
+          <div class="pub-links"><a href="#">PDF</a><a href="#">DOI</a><a href="#">Data</a></div>
+        </div>
+      </li>
+      <li>
+        <span class="pub-year">2025</span>
+        <div>
+          <div class="pub-title">[Paper title goes here]</div>
+          <div class="pub-venue">[Your Name], [Coauthors]. Journal Name, vol(issue).</div>
+          <div class="pub-links"><a href="#">PDF</a><a href="#">DOI</a></div>
+        </div>
+      </li>
+      <li>
+        <span class="pub-year">2024</span>
+        <div>
+          <div class="pub-title">[Paper title goes here]</div>
+          <div class="pub-venue">[Your Name], [Coauthors]. Journal Name, vol(issue).</div>
+          <div class="pub-links"><a href="#">PDF</a><a href="#">DOI</a></div>
+        </div>
+      </li>
+    </ul>
+    <p style="margin-top:1.2rem; font-size:0.9rem;">Full list on <a href="#">Google Scholar</a> ↗</p>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-wrap">
+    <span>© <span id="year"></span> [Your Name]</span>
+    <span>Built with GitHub Pages</span>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); });
+  }, { threshold: 0.12 });
+  revealEls.forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CV — [Your Name]</title>
+<meta name="description" content="CV: education, appointments, and awards.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Public+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a class="nav-mark" href="index.html">[YOUR_NAME]</a>
+    <ul class="nav-links">
+      <li><a href="index.html">About</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="cv.html" class="active">CV</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+  <div class="growth-rule" aria-hidden="true"></div>
+</header>
+
+<main>
+  <div class="page-header">
+    <p class="hero-eyebrow">04 — CV</p>
+    <h1>CV</h1>
+    <p class="lede">Education, appointments, fellowships, and awards. Download the full PDF for teaching, service, and skills.</p>
+  </div>
+
+  <section class="reveal">
+    <div class="cv-cta">
+      <a class="btn" href="cv.pdf">Download full CV (PDF)</a>
+      <span style="font-size:0.9rem; color:#56676F;">Last updated [Month Year]</span>
+    </div>
+    <ul class="cv-timeline">
+      <li>
+        <span class="cv-when">2022–Present</span>
+        <div class="cv-what"><strong>PhD Candidate, [Field]</strong><span>[Institution] — Advisor: [Name]</span></div>
+      </li>
+      <li>
+        <span class="cv-when">[Year–Year]</span>
+        <div class="cv-what"><strong>[Degree], [Field]</strong><span>[Institution]</span></div>
+      </li>
+      <li>
+        <span class="cv-when">[Year]</span>
+        <div class="cv-what"><strong>[Award or Fellowship name]</strong><span>[Awarding body]</span></div>
+      </li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-wrap">
+    <span>© <span id="year"></span> [Your Name]</span>
+    <span>Built with GitHub Pages</span>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); });
+  }, { threshold: 0.12 });
+  revealEls.forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>
