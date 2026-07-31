@@ -123,6 +123,21 @@ header.site-header {
 .page-header p.lede { font-size: 1.03rem; max-width: 52ch; color: #33454F; margin: 0; }
 
 /* ---------- Hero ---------- */
+.hero-banner {
+  background-image: linear-gradient(to bottom, rgba(10,27,38,0.55) 0%, rgba(10,27,38,0.3) 60%, rgba(245,246,241,0) 100%), url('photo2.jpeg');
+  background-size: cover;
+  background-position: center;
+  max-width: 100% !important;
+  padding-left: var(--edge) !important;
+  padding-right: var(--edge) !important;
+  margin: 0 !important;
+}
+.hero-banner h1,
+.hero-banner .hero-eyebrow { color: #fff !important; }
+.hero-banner h1 em { color: var(--coral) !important; }
+.hero-banner .hero-links a { color: #fff; }
+.hero-banner .hero-links a:hover { color: var(--coral); }
+.hero-banner > div { max-width: var(--max); margin: 0 auto; width: 100%; }
 .hero {
   max-width: var(--max);
   margin: 0 auto;
