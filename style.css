@@ -382,7 +382,30 @@ footer {
 }
 .reveal.in { opacity: 1; transform: translateY(0); }
 
+/* Research page: projects on the left, lab photo on the right */
+.research-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 220px;
+  gap: 1.6rem;
+  align-items: start;
+}
+.research-photo {
+  margin: 0;
+  /* line the photo up with the first section's cards */
+  padding-top: calc(clamp(2.2rem, 5vw, 3.6rem) + 3.5rem);
+}
+.research-photo img {
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--sand);
+  border-radius: 4px;
+}
+
 /* Responsive */
+@media (max-width: 860px) {
+  .research-layout { grid-template-columns: 1fr; }
+  .research-photo { padding-top: 0; max-width: 260px; margin: 0 auto 2.5rem; }
+}
 @media (max-width: 720px) {
   .hero { grid-template-columns: 1fr; }
   .hero-photo { width: 120px; height: 120px; order: -1; }
